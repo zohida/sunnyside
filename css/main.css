@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+img{
+    display: block;
+    vertical-align: middle;
+}
+
+.container{
+    width: 100%;
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site__header{
+    padding-top: 32px;
+    padding-bottom: 30px;
+    background-color: #4abdf2;
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header__btn{
+    width: 24px;
+    height: 18px;
+    background-color: transparent;
+    background-image: url("../images/menu.svg");
+    border: transparent;
+}
+
+.site-header__wrapper{
+    display: none;
+}
+
+@media only screen and (min-width:576px){
+    .header__btn{
+        display: none;
+    }
+
+    .site-header__wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 37px;
+        margin-right: 20px;
+        list-style-type: none;
+    }
+
+    .nav__link{
+        color: #FFF;
+        font-family: "Barlow Condensed";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: -0.129px;
+        text-decoration: none;
+    }
+
+    .header__link{
+        display: inline-block;
+        width: 140px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #fff;
+        border-radius: 50px;
+        padding: 16px 0;
+        color: #24303E;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: -0.107px;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    .site-header__logo{
+        width: 170px;
+        height: 33px;
+    }
+    .nav__list{
+        gap: 47px;
+        margin-right: 47px;
+    }
+
+}
+
+.site__main{
+    flex-grow: 1;
+}
+
+.hero{
+    padding-top: 88px;
+    padding-bottom: 188px;
+    background-image: url("../images/heroMobilebG.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__title{
+    margin: 0;
+    margin-bottom: 52px;
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 6.25px;
+    text-transform: uppercase;
+}
+
+.hero__link{
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    animation-name: heroLink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes heroLink {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(50px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (min-width:491px) {
+    .hero__title{
+        font-size: 56px;
+        line-height: 69px;
+    }
+}
+
+@media only screen and (min-width:576px) {
+    .hero{
+        padding-top: 105px;
+        padding-bottom: 331px;
+        background-image: url("../images/herobG.png");
+    }
+
+    .hero__title{
+        font-weight: 900;
+        letter-spacing: 8.75px;
+        text-align: center;
+    }
+}
+
+.picture{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.picture__inner{
+    width: 100%;;
+}
+
+.picture__list{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+.picture__item{
+    padding-left: 0;
+}
+
+.picture__wrapper{
+    width: 327px;
+}
+
+.picture__title{
+    margin: 0;
+    margin-top: 64px;
+    margin-bottom: 24px;
+    color: #24303E;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -0.229px;
+}
+
+.picture__text{
+    margin: 0;
+    margin-bottom: 32px;
+    color: #808397;
+    text-align: center;
+    font-family: "Barlow";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.129px;
+}
+
+.picture__link{
+    display:block;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    width: 137px;
+    text-decoration: underline rgb(255, 234, 112 ) 10px;
+    color: #24303E;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 25px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.picture__link:nth-child(2){
+    text-decoration: underline  #FE7766 10px;
+}
+
+@media only screen and (min-width:400px) {
+
+}
