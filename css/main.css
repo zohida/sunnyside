@@ -411,7 +411,130 @@ html {
     
 }
 
+.feedback__inner{
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 64px 0 86px;
+}
 
+.feedback__title{
+    margin: 0;
+    color: #A7AAAD;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.feedback__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.feedback__item::before{
+    display: inline-block;
+    background-image: url("../images/author1.svg");
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 72px;
+    content: "";
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.feedback__item:nth-child(2)::before{
+    background-image: url("../images/author2.svg");
+}
+.feedback__item:nth-child(3)::before{
+    background-image: url("../images/author3.svg");
+}
+
+.feedback__text-wrapper {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.feedback__text{
+    margin: 0;
+    margin-bottom: 32px;
+    color: #5B636D;
+    text-align: center;
+    font-family: "Barlow";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px; 
+    letter-spacing: -0.129px;
+}
+
+.feedback__author {
+    margin: 0;
+    color: #24303E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.129px;
+}
+
+.feedback__position {
+    margin: 0;
+    color: #A7AAAD;
+    font-family: "Barlow";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px; /* 178.571% */
+    letter-spacing: -0.1px;
+}
+
+@media only screen and (min-width:1110px) {
+    .feedback__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .feedback__item::before{
+        margin-top: 81px;
+        margin-bottom: 58px;
+    }
+    
+   .feedback__text{
+    margin-bottom: 69px;
+   }
+}
+
+.picture__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+}
+
+.picture__item {
+    margin: 0;
+    width: 50%;
+    height: auto;
+}
+
+@media only screen and (min-width:576px) {
+    .picture__list{
+        flex-wrap: nowrap;
+    }
+    .pic__image{
+        width: 400px;
+        height: auto
+    }
+    
+}
 
 
 
